@@ -1,0 +1,45 @@
+### 获取队伍列表
+POST https://ready-player-one.gdmuna.com/api/score/getTeamList
+Content-Type: application/json
+
+
+
+### 获取队伍详细信息
+POST http://127.0.0.1:33001/api/score/getTeamInfo
+Content-Type: application/json
+
+{
+    "teamId": "1"
+}
+
+### 获取游戏点位信息
+POST http://127.0.0.1:33001/api/score/getGameId
+Content-Type: application/json
+
+{
+    "machineKey": "<uuid>"
+}
+
+
+### 获取队伍排名
+POST http://127.0.0.1:33001/api/score/getTeamRanking
+Content-Type: application/json
+
+### 成绩上报
+POST http://127.0.0.1:33001/api/score/scoreUpload
+Content-Type: application/json
+
+{
+    "gameId": "3",
+    "captainId": "<captainId>"
+}
+
+### 设置队伍在某一关的通关时间
+POST http://127.0.0.1:33001/api/score/setTeamScore
+Content-Type: application/json
+
+{
+    "gameId": "1",
+    "teamId": "1",
+    "time": null
+}
